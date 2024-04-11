@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: "se____________________________nd",
+});
+</script>
+
 <template>
   <main
     class="min-h-screen font-sans text-neutral-7 flex flex-col justify-center bg-secondary/50 p-10"
