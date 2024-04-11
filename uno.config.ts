@@ -8,7 +8,21 @@ export default defineConfig({
       provider: "google", // default provider
       fonts: {
         // these will extend the default theme
-        sans: "Limelight",
+        sans: {
+          name: "Nunito",
+          weights: [
+            "100",
+            "200",
+            "300",
+            "400",
+            "500",
+            "600",
+            "700",
+            "800",
+            "900",
+          ],
+        },
+        display: "Limelight",
       },
     }),
   ],
