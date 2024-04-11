@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: "se____________________________nd",
+  title: "SEEND",
 });
 </script>
 
@@ -11,7 +11,7 @@ useHead({
     <section class="max-h-4xl grid grid-cols-2 grow bg-white rounded-6 p-2">
       <div></div>
       <button class="bg-secondary/90 text-primary rounded-6 text-50 uppercase">
-        Send
+        Seend
       </button>
     </section>
   </main>
