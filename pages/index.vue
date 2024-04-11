@@ -11,17 +11,20 @@ async function submit() {
 </script>
 
 <template>
-  <form class="grid grid-cols-2 gap-10 grow" @submit.prevent="submit">
+  <form
+    class="flex flex-col lg:grid grid-cols-2 gap-10 grow"
+    @submit.prevent="submit"
+  >
     <textarea
-      class="w-full h-full outline-none resize-none p-10 font-medium text-xl placeholder:text-neutral-3"
+      class="w-full h-full outline-none resize-none p-1 lg:p-10 font-medium lg:text-xl placeholder:text-neutral-3 grow"
       autofocus
       placeholder="Start writing here..."
       v-model="writtenText"
     ></textarea>
     <button
-      class="uppercase font-display transition-all duration-75 text-40"
+      class="uppercase font-display transition-all duration-75 text-14 lg:text-40"
       :class="{
-        'bg-secondary text-primary rounded-6 hover:bg-primary hover:text-secondary hover:rounded-20':
+        'text-secondary bg-primary rounded-2 lg:rounded-6 hover:text-primary hover:bg-secondary hover:rounded-20':
           !isPending,
         'bg-gray-1 text-gray-500 rounded-100': isPending,
       }"
